@@ -1,33 +1,28 @@
 export const categories = [
   {
     id: 3,
-    name: "Traditional",
+    name: "Desi",
     photo_url:
-      "https://www.telegraph.co.uk/content/dam/Travel/2019/January/france-food.jpg?imwidth=1400",
+      "https://www.curryflow.com/wp-content/uploads/2020/10/the-best-top-10-indian-dishes-1.jpg",
   },
   {
     id: 1,
-    name: "Mexican Food",
-    photo_url: "https://ak1.picdn.net/shutterstock/videos/19498861/thumb/1.jpg",
+    name: "Chinese",
+    photo_url: "https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3194%2Ftrend20210823114529.jpg",
   },
   {
     id: 2,
-    name: "Italian Food",
+    name: "Italian",
     photo_url:
-      "https://images.unsplash.com/photo-1533777324565-a040eb52facd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "https://www.tastingtable.com/img/gallery/20-italian-dishes-you-need-to-try-at-least-once/l-intro-1643403830.jpg",
   },
   {
     id: 4,
-    name: "Smoothies",
+    name: "Fast Food",
     photo_url:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/still-life-of-three-fresh-smoothies-in-front-of-royalty-free-image-561093647-1544042068.jpg?crop=0.715xw:0.534xh;0.0945xw,0.451xh&resize=768:*",
+      "https://img.freepik.com/premium-photo/american-fast-food-hamburgers-french-fries-hot-dogs-fast-food-unhealthy-eating-concept-top-view_114941-2545.jpg",
   },
-  {
-    id: 0,
-    name: "Pizza",
-    photo_url:
-      "https://amp.businessinsider.com/images/5c084bf7bde70f4ea53f0436-750-563.jpg",
-  },
+ 
 ];
 
 export const recipes = [
@@ -36,58 +31,50 @@ export const recipes = [
     categoryId: 3,
     title: "Biryani",
     photo_url:
-      // "https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg",
-      "https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2487&q=80",
+      
+     "https://imagevars.gulfnews.com/2022/03/11/Guntur-Gongura-Biryani-_17f793bfa09_large.jpg",
     photosArray: [
-      "https://www.texanerin.com/content/uploads/2019/06/nobake-chocolate-cookies-1-650x975.jpg",
-      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
-      "https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg",
-      "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e",
-      "https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg",
+      "https://imagevars.gulfnews.com/2022/03/11/Guntur-Gongura-Biryani-_17f793bfa09_large.jpg"
     ],
-    time: "15",
+    time: "55",
     ingredients: [
       [0, "200ml"],
       [1, "5g"],
       [2, "300g"],
     ],
     description:
-      "-- Start with cleaned and peeled russet potatoes that you have cut into 3/8-inch match sticks. Place in bowl of very cold water: keep rinsing and changing the water until the water is clear; drain thoroughly and dry with paper towels or a clean lint-free kitchen towel.\n\n -- Meanwhile, you preheat your hot oil to 350 degrees F. Place prepared taters in oil and cook about 5 minutes. They will have that blond-tone color to them. \n\n -- Note: Once you add cold potatoes to the hot oil, the temperature of your oil is going to drop - you want it to be somewhere between 330 - 325 degrees F. \n\n -- Remove from oil; drain and cool. Now - either refrigerate until ready to finish cooking, or cool completely and freeze up to 3 months. To freeze properly - place completely cooled fries in single layer on tray and place in freezer until frozen. Then bag them.\n\n -- To finish cooking - preheat your oil to 400* F. Add your cold fries (which will drop the oil temp - which is fine because you want it near the 375 degrees F. temp) and cook a few minutes until done. Lightly salt them and shake well so that the salt distributes well and they are not salty.",
+    "--In a large bowl, cut the chicken into big chunks, wash and clean thoroughly. Combine yogurt, ground masala paste, salt, red chilli powder, turmeric powder, coriander powder, garam masala, and lemon juice. Mix well. Add the chicken pieces to the marinade along with 2 tsp of oil. Set aside for 2-3 hours. Heat sufficient oil in a pan, deep fry the onions until golden brown. Cool and set aside. In a blender, combine half of the fried onions, chopped tomatoes, green chillies, ginger, garlic, mint leaves, and coriander leaves. Blend to form a smooth paste. Soak saffron in milk and set aside. Wash rice, soak for 10 minutes. Boil rice in water with salt and whole garam masala. Drain when 3/4th done, remove garam masala. Heat a pan, melt 2 tbsp ghee. Place half of the marinated chicken in the pan. Cover with a layer of rice. Sprinkle fried onions, half of cardamom powder, chopped coriander, and saffron. Add remaining ghee. Repeat the layers. Cover with lid and cook for 20-22 minutes on low flame. Check and fluff rice with a fork. Check chicken tenderness, then turn off heat. Serve hot with raita or as is."
   },
   {
     recipeId: 3,
     categoryId: 4,
-    title: "Triple Berry Smoothie",
+    title: "Zinger Burger",
     photo_url:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=768:*",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3QjyfJ373VeOOPsZLXXU_SXxzbXPs828tFcvQikB3t0xlH-MKRd8HtE3NeCaJn9QOJIo&usqp=CAU",
     photosArray: [
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=768:*",
-      "https://www.vitamix.com/media/other/images/xVitamix-Triple-Berry-Smoothie-square-crop__1.jpg.pagespeed.ic.OgTC3ILD3R.jpg",
-      "http://images.media-allrecipes.com/userphotos/960x960/3798204.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzui8MM6W66I29VZwVvcjpGv99JW3O1owgupc3KwB65rhAyrZ",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3QjyfJ373VeOOPsZLXXU_SXxzbXPs828tFcvQikB3t0xlH-MKRd8HtE3NeCaJn9QOJIo&usqp=CAU",
+      
     ],
-    time: "10",
+    time: "25-30",
     ingredients: [
       [59, "1"],
       [60, "1/2 lbs"],
       [61, "1/2 liters"],
     ],
     description:
-      "In a blender, combine all ingredients and blend until smooth. Then divide between 2 cups and top with blackberries, if desired.",
+      "--Marinate chicken breast with salt, pepper, and mustard paste for 15 minutes. Add 3 tbsp heaped flour, 3 tbsp corn flour, 1/2 tsp baking powder, 1 beaten egg, and chilled water to make batter. Dip marinated chicken breast in batter, then roll in dry flour. Fry until crispy and golden. Cut burger buns in half, apply mayonnaise and vinegar, place cheese slice, top with fried chicken and salad leaves. Cover with top bun. Serve immediately while hot.",
   },
   {
     recipeId: 2,
     categoryId: 3,
-    title: "Vegan Cookies",
+    title: "Nehari",
     photo_url:
-      "https://www.texanerin.com/content/uploads/2018/06/no-bake-lactation-cookies-1-650x975.jpg",
+      "https://www.foodfusion.com/wp-content/uploads/2019/06/Mutton-Nihari-Recipe-by-Food-fusion-3.jpg",
     photosArray: [
-      "https://www.texanerin.com/content/uploads/2018/06/no-bake-lactation-cookies-1-650x975.jpg",
-      "https://ichef.bbci.co.uk/news/660/cpsprodpb/B2C0/production/_106106754_vegnuggets976.jpg",
-      "https://pixel.nymag.com/imgs/daily/grub/2017/11/22/22-mcds-chicken-tenders.w330.h330.jpg",
-      "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-img.health.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_16_9%2Fpublic%2Fstyles%2Fmain%2Fpublic%2Fgettyimages-508510211.jpg%3Fitok%3Dh-Uryi8r&w=400&c=sc&poi=face&q=85",
+      "https://www.foodfusion.com/wp-content/uploads/2019/06/Mutton-Nihari-Recipe-by-Food-fusion-3.jpg",
+
     ],
-    time: "30",
+    time: "60",
     ingredients: [
       [0, "2 quarts"],
       [16, "1"],
@@ -101,111 +88,19 @@ export const recipes = [
       [21, "4"],
     ],
     description:
-      "-- Beat the egg and then combine it with water in a bowl. Stir. Combine the flour, salt, MSG, pepper, onion powder and garlic powder in a gallon size zip lock bag. Pound each of the breast filets until about 1/4-inch thick. Then cut into bite sized pieces. Coat each piece with the flour mixture by shaking in the zip lock bag. Remove and coat in the egg mixture. Then coat in the flour mixture again. Shake to coat. Deep fry at 375 degrees for 10-12 minutes, until browned and crispy.",
+      "--Grind fennel seeds, cardamom seeds, dried ginger, and pipli; set aside. Add salt, black peppercorns, red pepper, coriander powder, cumin, and freshly ground spice to yogurt. Pour oil in a pan, fry for 2 to 3 minutes on medium heat. Then add onions and fry until golden brown. Add garlic to fried onions, fry for 1 to 2 minutes. Add flour and roast until aromatic. Put the mixed spices in the pan, roast until oil comes up. Add meat, bones, and marrow bones. Add 3 liters of water, cook on medium heat for 3 to 4 hours until meat is tender. When meat is tender and nihari is thick, add lemon juice and cook on low heat for 5 minutes. Nihari is ready when oil comes up. Serve with ginger, green chilies, coriander, lemon, and naans.",
   },
-  {
-    recipeId: 3,
-    categoryId: 3,
-    title: "Pumpkin Spice Cookies",
-    photo_url:
-      "https://www.texanerin.com/content/uploads/2018/11/pumpkin-spice-cookies-4-650x975.jpg",
-    photosArray: [
-      "https://www.texanerin.com/content/uploads/2018/11/pumpkin-spice-cookies-4-650x975.jpg",
-      "https://cdn.junglecreations.com/wp/junglecms/2018/07/4164c5bd-wide-thumbnail.jpg",
-      "https://pinchofyum.com/wp-content/uploads/Crunchwrap-Inside.jpg",
-      "https://monsonmadethis.com/wp-content/uploads/2017/10/IMG_20171015_161017_025-e1533869302263.jpg",
-    ],
-    time: "45",
-    ingredients: [
-      [0, "2 tablespoons"],
-      [22, "1/2"],
-      [23, "2 tablespoons"],
-      [7, "2 cloves"],
-      [3, "1 teaspoon"],
-      [24, "1 tablespoon"],
-      [25, "1 lb"],
-      [1, "2 teaspoons"],
-      [4, "2 teaspoons"],
-      [26, "15 oz"],
-      [27, "8"],
-      [28, "2"],
-      [29, "1 cup"],
-    ],
-    description:
-      "-- In a medium pot over medium heat, heat 1 tablespoon oil. Add onion and cook until soft, 5 minutes. Add garlic and cook until fragrant, 1 minute more. Add tomato paste and stir to coat onion and garlic. Add ground beef and cook, breaking up meat with a wooden spoon, until no longer pink, 6 minutes. Drain fat.\n\n -- Return beef to pot and season with chili powder, paprika, salt, and pepper. Add tomato sauce and kidney beans. Bring to a boil, then reduce heat and let simmer 15 minutes. Add some chili to center of each tortilla, leaving room to fold in edges. Top with Fritos, then cheddar. Fold edges of tortillas toward the center, creating pleats. Invert Crunchwraps so pleats are on the bottom and stay together.\n\n -- In medium skillet over medium heat, heat remaining tablespoon oil. Add a Crunchwrap seam side down and cook until tortilla is golden, 3 to 5 minutes per side. Repeat with remaining Crunchwraps",
-  },
-  {
-    recipeId: 1,
-    categoryId: 3,
-    title: "Brownies",
-    photo_url:
-      "https://www.texanerin.com/content/uploads/2018/01/coconut-flour-brownies-1-650x975.jpg",
-    photosArray: [
-      "https://www.texanerin.com/content/uploads/2018/01/coconut-flour-brownies-1-650x975.jpg",
-      "https://images-gmi-pmc.edge-generalmills.com/6fbc6859-e2b1-499d-b0fa-ada600c9cc3f.jpg",
-      "http://www.recipe4living.com/assets/itemimages/400/400/3/83c29ac7418067c2e74f31c8abdd5a43_477607049.jpg",
-      "https://www.franchisechatter.com/wp-content/uploads/2014/08/KFC-Photo-by-James.jpg",
-    ],
-    time: "30",
-    ingredients: [
-      [1, "2 tablespoons"],
-      [3, "1 tablespoon"],
-      [4, "1 teaspoon"],
-      [5, "1/2 teaspoons"],
-      [6, "1/2 teaspoons"],
-      [7, "1/2 teaspoons"],
-      [8, "1/2 teaspoons"],
-      [9, "1/2 teaspoons"],
-      [10, "1/2 teaspoons"],
-      [11, "1/2 teaspoons"],
-      [12, "1/2 cups"],
-      [13, "1 tablespoon"],
-      [14, "1 tablespoon"],
-      [15, "2 breasts, 2 thighs, 2 drumsticks, 2 wings"],
-      [16, "1"],
-      [17, "2 quarts"],
-    ],
-    description:
-      "-- Preheat fryer to 350°F. Thoroughly mix together all spices. Combine spices with flour, brown sugar and salt. Dip chicken pieces in egg white to lightly coat them, then transfer to flour mixture. Turn a few times and make sure the flour mix is really stuck to the chicken.\n\n -- Repeat with all the chicken pieces. Let chicken pieces rest for 5 minutes so crust has a chance to dry a bit. Fry chicken in batches. Breasts and wings should take 12-14 minutes, and legs and thighs will need a few more minutes. Chicken pieces are done when a meat thermometer inserted into the thickest part reads 165°F. Let chicken drain on a few paper towels when it comes out of the fryer. Serve hot.",
-  },
-  {
-    recipeId: 4,
-    categoryId: 1,
-    title: "Perfect Fish Tacos",
-    photo_url:
-      "https://hips.hearstapps.com/hmg-prod/images/190307-fish-tacos-112-1553283299.jpg",
-    photosArray: [
-      "http://d2814mmsvlryp1.cloudfront.net/wp-content/uploads/2014/04/WGC-Fish-Tacos-copy-2.jpg",
-      "https://thecozyapron.com/wp-content/uploads/2018/03/baja-fish-tacos_thecozyapron_1.jpg",
-      "https://www.simplyrecipes.com/wp-content/uploads/2017/06/2017-07-22-FishTacos-6.jpg",
-    ],
-    time: "35",
-    ingredients: [
-      [30, "jucie of 1 "],
-      [24, "2 teaspoons"],
-      [0, "3 tablespoons"],
-      [3, "1 teaspoon"],
-      [31, "1/2 teaspoons"],
-      [32, "1/2 teaspoons"],
-      [4, "2 teaspoons"],
-      [33, "1/2 lb"],
-      [27, "8"],
-      [14, "2 teasponns"],
-      [34, "1"],
-    ],
-    description:
-      "-- In a medium shallow bowl, whisk together olive oil, lime juice, paprika, chili powder, cumin, and cayenne. Add cod, tossing until evenly coated. Let marinate 15 minutes. Meanwhile, make slaw: In a large bowl, whisk together mayonnaise, lime juice, cilantro, and honey. Stir in cabbage, corn, and jalapeño. Season with salt and pepper.\n\n -- In a large nonstick skillet over medium-high heat, heat vegetable oil. Remove cod from marinade and season both sides of each filet with salt and pepper. Add fish flesh side-down. Cook until opaque and cooked through, 3 to 5 minutes per side.\n\n -- Let rest 5 minutes before flaking with a fork. Assemble tacos: Serve fish over grilled tortillas with corn slaw and avocado. Squeeze lime juice on top and garnish with sour cream. ",
-  },
+
+  
   {
     recipeId: 5,
     categoryId: 1,
-    title: "Chicken Fajitas",
+    title: "Wonton",
     photo_url:
-      "https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Flavorful-Chicken-Fajitas_EXPS_GHBZ18_12540_B08_15_8b.jpg",
+     "https://www.zestedlemon.com/wp-content/uploads/2019/09/How-to-Make-Cream-Cheese-Wontons-Feartured.jpg",
     photosArray: [
-      "https://dadwithapan.com/wp-content/uploads/2015/07/Spicy-Chicken-Fajitas-22-1200x480.jpg",
-      "https://3.bp.blogspot.com/-X-dHj7ORF9Q/XH4ssgTuSZI/AAAAAAAAEig/E46HP9wCfdsvyJFcMTX30cw-ICep8lF9ACHMYCw/s1600/chicken-fajitas-mexican-food-id-149559-buzzerg.jpg",
-      "https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201403-xl-chipotle-chicken-fajitas.jpg?itok=ghVcI5SQ",
+      "https://www.zestedlemon.com/wp-content/uploads/2019/09/How-to-Make-Cream-Cheese-Wontons-Feartured.jpg",
+      
     ],
     time: 35,
     ingredients: [
@@ -228,15 +123,75 @@ export const recipes = [
       "-- In a large bowl, combine 2 tablespoons oil, lemon juice and seasonings; add the chicken. Turn to coat; cover. Refrigerate for 1-4 hours In a large skillet, saute peppers and onions in remaining oil until crisp-tender. Remove and keep warm. Drain chicken, discarding marinade. In the same skillet, cook chicken over medium-high heat for 5-6 minutes or until no longer pink.\n\n -- Return pepper mixture to pan; heat through. Spoon filling down the center of tortillas; fold in half. Serve with toppings as desired.",
   },
   {
+    recipeId: 3,
+    categoryId: 3,
+    title: "Palao",
+    photo_url:
+      "https://tiffinandteaofficial.com/wp-content/uploads/2020/06/IMG_6707-1-scaled.jpg",
+    photosArray: [
+      "https://tiffinandteaofficial.com/wp-content/uploads/2020/06/IMG_6707-1-scaled.jpg",
+     
+    ],
+    time: "45",
+    ingredients: [
+      [0, "2 tablespoons"],
+      [22, "1/2"],
+      [23, "2 tablespoons"],
+      [7, "2 cloves"],
+      [3, "1 teaspoon"],
+      [24, "1 tablespoon"],
+      [25, "1 lb"],
+      [1, "2 teaspoons"],
+      [4, "2 teaspoons"],
+      [26, "15 oz"],
+      [27, "8"],
+      [28, "2"],
+      [29, "1 cup"],
+    ],
+    description:
+      "--Take a clean muslin cloth, tie onion, garlic, ginger, bay leaf, cardamom, peppercorns, coriander seeds, cloves, cinnamon, nutmeg, and mace. Wash chicken, cook with water, salt, and bouquet garni. Remove garni, keep stock with chicken aside. Heat ghee, fry onions. Set aside 1/4th. In remaining onions, add cumin, ginger-garlic paste, tomatoes, spices, yogurt, chicken. Simmer for 2 minutes. Add masala to yakhni, cook rice for 5 minutes. Sprinkle fried onions, ghee, seal pot with foil. Cook on low heat for 15 minutes. Enjoy Yakni Pulao with cucumber raita.",
+  },
+  {
+    recipeId: 1,
+    categoryId: 3,
+    title: "Karahi",
+    photo_url:
+      "https://www.pakistanihealthyrecipes.com/wp-content/uploads/2021/05/pakistani-chicken-karahi-recipe.jpg",
+    photosArray: [
+      "https://www.pakistanihealthyrecipes.com/wp-content/uploads/2021/05/pakistani-chicken-karahi-recipe.jpg",
+     
+    ],
+    time: "30",
+    ingredients: [
+      [1, "2 tablespoons"],
+      [3, "1 tablespoon"],
+      [4, "1 teaspoon"],
+      [5, "1/2 teaspoons"],
+      [6, "1/2 teaspoons"],
+      [7, "1/2 teaspoons"],
+      [8, "1/2 teaspoons"],
+      [9, "1/2 teaspoons"],
+      [10, "1/2 teaspoons"],
+      [11, "1/2 teaspoons"],
+      [12, "1/2 cups"],
+      [13, "1 tablespoon"],
+      [14, "1 tablespoon"],
+      [15, "2 breasts, 2 thighs, 2 drumsticks, 2 wings"],
+      [16, "1"],
+      [17, "2 quarts"],
+    ],
+    description:
+      "--Heat vegetable oil and ghee in a pan, fry cardamom, cloves, garlic. Add chicken, cook for 2-3 minutes, stirring. Add coriander, chili powder, salt, ginger paste, fried onions-yogurt mixture. Cook for a minute. Add garam masala, saffron. If gravy is thick, add water. Cover and simmer for 10-15 minutes on low heat, stirring occasionally. Serve hot, garnished with coriander leaves.",
+  },
+ 
+  {
     recipeId: 6,
     categoryId: 2,
     title: "Buffalo Pizza",
     photo_url:
       "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
     photosArray: [
-      "https://www.tablefortwoblog.com/wp-content/uploads/2019/01/buffalo-chicken-pizza-recipe-photos-tablefortwoblog-3-500x500.jpg",
-      "http://pizzachoicema.com/wp-content/uploads/2018/08/Buffalo-Chicken-Pizza.jpg",
-      "https://static1.squarespace.com/static/565bb41ae4b0509ba9fdf769/t/5b9a8e80aa4a998b0be0fcf4/1536855690622/pizza.gif",
+    "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
     ],
     time: 50,
     ingredients: [
@@ -260,15 +215,13 @@ export const recipes = [
   },
   {
     recipeId: 0,
-    categoryId: 0,
-    title: "Classic Lasagna",
+    categoryId: 1,
+    title: "Dumplings",
     photo_url:
-      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
+      "https://www.foodnetwork.com/content/dam/images/food/fullset/2021/10/11/0/FNK_Dumplings-Crispy-Skirt_H1_s4x3.jpg",
     photosArray: [
-      "https://namelymarly.com/wp-content/uploads/2018/04/20180415_Beet_Lasagna_10.jpg",
-      "https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.al.com/home/bama-media/width600/img/news_impact/photo/burger-fijpg-57e7e5907630c2ad.jpg",
-      "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e",
-      "https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg",
+      "https://www.foodnetwork.com/content/dam/images/food/fullset/2021/10/11/0/FNK_Dumplings-Crispy-Skirt_H1_s4x3.jpg",
+     
     ],
     time: "15",
     ingredients: [
@@ -284,11 +237,10 @@ export const recipes = [
     categoryId: 2,
     title: "Spaghetti Carbonara",
     photo_url:
-      "https://truffle-assets.imgix.net/655ce202-862-butternutsquashcarbonara-land.jpg",
+      "https://images.services.kitchenstories.io/6glN_4JhpVS9aUiBS7JnGsuDULA=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2568-photo-final-_0.jpg",
     photosArray: [
-      "https://ak3.picdn.net/shutterstock/videos/10431533/thumb/10.jpg",
-      "https://www.kcet.org/sites/kl/files/styles/kl_image_large/public/thumbnails/image/square_hero_desktop_2x_sfs_spaghetti_carbonara_clr-3.jpg?itok=T-rsBDIZ",
-      "https://cdn-image.foodandwine.com/sites/default/files/HD-201104-r-spaghetti-with-anchovy.jpg",
+      "https://images.services.kitchenstories.io/6glN_4JhpVS9aUiBS7JnGsuDULA=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2568-photo-final-_0.jpg",
+
     ],
     time: 15,
     ingredients: [
@@ -310,9 +262,8 @@ export const recipes = [
     title: "Lazania",
     photo_url: "https://images8.alphacoders.com/817/817353.jpg",
     photosArray: [
-      "https://previews.123rf.com/images/somegirl/somegirl1509/somegirl150900048/46103208-top-view-of-a-delicious-traditional-italian-lasagna-made-with-minced-beef-bolognese-sauce-topped-wit.jpg",
-      "https://truffle-assets.imgix.net/87f324e4-YOUTUBE-NO-TXT.00_03_19_14.Imagen_fija001.jpg",
-      "https://images4.alphacoders.com/817/817350.jpg",
+      "https://images8.alphacoders.com/817/817353.jpg",
+      
     ],
     time: 60,
     ingredients: [
