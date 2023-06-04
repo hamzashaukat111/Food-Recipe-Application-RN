@@ -3,6 +3,8 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import MenuButton from "../../components/MenuButton/MenuButton";
+// import Scan from "../screens/Scan";
+import Scan from "../../screens/Scan";
 
 export default function DrawerContainer(props) {
   const { navigation } = props;
@@ -22,6 +24,14 @@ export default function DrawerContainer(props) {
           source={require("../../../assets/icons/category.png")}
           onPress={() => {
             navigation.navigate("Categories");
+            navigation.closeDrawer();
+          }}
+        />
+        <MenuButton
+          title="SCAN"
+          source={require("../../../assets/icons/category.png")}
+          onPress={() => {
+            navigation.navigate("Scan");
             navigation.closeDrawer();
           }}
         />
