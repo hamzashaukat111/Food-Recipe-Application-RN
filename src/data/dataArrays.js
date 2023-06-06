@@ -67,7 +67,7 @@ export const recipes = [
   {
     recipeId: 2,
     categoryId: 3,
-    title: "Nehari",
+    title: "Waris Nehari",
     photo_url:
       "https://www.foodfusion.com/wp-content/uploads/2019/06/Mutton-Nihari-Recipe-by-Food-fusion-3.jpg",
     photosArray: [
@@ -92,6 +92,7 @@ export const recipes = [
   },
 
   
+
   {
     recipeId: 5,
     categoryId: 1,
@@ -122,6 +123,33 @@ export const recipes = [
     description:
       "-- In a large bowl, combine 2 tablespoons oil, lemon juice and seasonings; add the chicken. Turn to coat; cover. Refrigerate for 1-4 hours In a large skillet, saute peppers and onions in remaining oil until crisp-tender. Remove and keep warm. Drain chicken, discarding marinade. In the same skillet, cook chicken over medium-high heat for 5-6 minutes or until no longer pink.\n\n -- Return pepper mixture to pan; heat through. Spoon filling down the center of tortillas; fold in half. Serve with toppings as desired.",
   },
+
+  { recipeId: 2,
+    categoryId: 3,
+    title: "phajjay k paye",
+    photo_url:
+      "https://static.finmail.com/wp-content/uploads/2020/08/31183959/mutton-nihari-3.jpg",
+    photosArray: [
+      "https://static.finmail.com/wp-content/uploads/2020/08/31183959/mutton-nihari-3.jpg",
+
+    ],
+    time: "60",
+    ingredients: [
+      [0, "2 quarts"],
+      [16, "1"],
+      [12, "1 cup"],
+      [18, "1 cup"],
+      [19, "1 teaspoon"],
+      [1, "2 teaspoons"],
+      [4, "1/4 teaspoons"],
+      [7, "1/8 teaspoons"],
+      [20, "1/2 teaspoons"],
+      [21, "4"],
+    ],
+    description:
+      "--Grind fennel seeds, cardamom seeds, dried ginger, and pipli; set aside. Add salt, black peppercorns, red pepper, coriander powder, cumin, and freshly ground spice to yogurt. Pour oil in a pan, fry for 2 to 3 minutes on medium heat. Then add onions and fry until golden brown. Add garlic to fried onions, fry for 1 to 2 minutes. Add flour and roast until aromatic. Put the mixed spices in the pan, roast until oil comes up. Add meat, bones, and marrow bones. Add 3 liters of water, cook on medium heat for 3 to 4 hours until meat is tender. When meat is tender and nihari is thick, add lemon juice and cook on low heat for 5 minutes. Nihari is ready when oil comes up. Serve with ginger, green chilies, coriander, lemon, and naans.",
+  },
+
   {
     recipeId: 3,
     categoryId: 3,
