@@ -5,6 +5,7 @@ import * as ImagePicker from "expo-image-picker";
 const Scan = () => {
   const [image, setImage] = useState(null);
   const [foodName, setFoodName] = useState(null);
+  const [scanning, setScanning] = useState(false);
 
   const pickImage = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -27,9 +28,6 @@ const Scan = () => {
   };
 
   const sendImageToAzure = async (uri) => {
-    // const apiUrl =
-    //   "https://cvwatermark-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/734afe81-8fa0-45d9-8bc5-81d075b50746/classify/iterations/Iteration1/image";
-    // const apiKey = "5e19fdcca31a48878e82eb0b7b226244";
     const apiUrl =
       "https://cvscanfood-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/49a8ea16-40d7-4234-b4a5-7e6c8bf4235f/classify/iterations/Iteration1/image";
     const apiKey = "6d9918f13de44cdbb32081baaf81387c";
@@ -41,6 +39,7 @@ const Scan = () => {
     });
 
     try {
+      setScanning(true); // Start scanning
       const response = await fetch(apiUrl, {
         method: "POST",
         body: formData,
@@ -58,13 +57,12 @@ const Scan = () => {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setScanning(false); // Stop scanning
     }
   };
 
   const handleAzureResponse = (data) => {
-    // Process the response from Azure Custom Vision
-    // Update the UI accordingly based on the predictions
-    console.log(data);
     const predictions = data.predictions;
     const highestProbabilityTag = predictions.reduce(
       (acc, curr) => (curr.probability > acc.probability ? curr : acc),
@@ -72,7 +70,6 @@ const Scan = () => {
     );
     const highestProbabilityTagName = highestProbabilityTag.tagName;
 
-    // Set the tagName to the component state
     setFoodName(highestProbabilityTagName);
   };
 
@@ -80,7 +77,11 @@ const Scan = () => {
     <View style={styles.container}>
       <Button title="Pick Image" onPress={pickImage} />
       {image && <Image source={{ uri: image }} style={styles.image} />}
-      {foodName && <Text style={styles.foodText}>The food is {foodName}</Text>}
+      {scanning ? (
+        <Text style={styles.scanningText}>Scanning the food...</Text>
+      ) : (
+        foodName && <Text style={styles.foodText}>The food is {foodName}</Text>
+      )}
     </View>
   );
 };
@@ -95,6 +96,11 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     marginTop: 20,
+  },
+  scanningText: {
+    fontSize: 18,
+    marginTop: 20,
+    fontStyle: "italic",
   },
   foodText: {
     fontSize: 24,

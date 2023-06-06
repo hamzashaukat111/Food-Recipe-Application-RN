@@ -29,12 +29,14 @@ function MainNavigator() {
         },
       }}
     >
-     
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Categories" component={CategoriesScreen} />
       <Stack.Screen name="Scan" component={Scan} />
       <Stack.Screen name="Search" component={SearchScreen} />
       <Stack.Screen name="Signup" component={Signup} />
+      <Stack.Screen name="Recipe" component={RecipeScreen} />
+      <Stack.Screen name="RecipesList" component={RecipesListScreen} />
+      <Stack.Screen name="Ingredient" component={IngredientScreen} />
       <Stack.Screen name="Welcome" component={Welcome} />
       <Stack.Screen
         name="IngredientsDetails"
