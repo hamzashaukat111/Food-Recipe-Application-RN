@@ -11,6 +11,9 @@ export default function DrawerContainer(props) {
   return (
     <View style={styles.content}>
       <View style={styles.container}>
+     
+
+
         <MenuButton
           title="HOME"
           source={require("../../../assets/icons/home.png")}
@@ -43,6 +46,24 @@ export default function DrawerContainer(props) {
             navigation.closeDrawer();
           }}
         />
+         <MenuButton
+          title="REGISTER"
+          source={require("../../../assets/icons/reg.png")}
+          onPress={() => {
+          navigation.navigate("Signup");
+            navigation.closeDrawer();
+          }}
+        />
+
+<MenuButton
+          title="WELCOME"
+          source={require("../../../assets/icons/home1.png")}
+          onPress={() => {
+          navigation.navigate("Welcome");
+            navigation.closeDrawer();
+          }}
+        />
+
       </View>
     </View>
   );
