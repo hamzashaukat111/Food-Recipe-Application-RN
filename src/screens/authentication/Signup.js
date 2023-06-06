@@ -1,3 +1,61 @@
+// import React, { useState } from "react";
+// import {
+//   View,
+//   Text,
+//   TextInput,
+//   TouchableOpacity,
+//   StyleSheet,
+// } from "react-native";
+// import { useNavigation } from "@react-navigation/native";
+
+// const Signup = () => {
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+//   const navigation = useNavigation();
+
+//   const handleLoginPress = () => {
+//     navigation.navigate("Login");
+//   };
+
+//   return (
+//     <View style={styles.container}>
+//       <Text style={styles.title}>First create your account 👩‍🍳</Text>
+//       <View style={styles.form}>
+//         <TextInput
+//           style={styles.input}
+//           placeholder="Name"
+//           value={name}
+//           onChangeText={setName}
+//           keyboardType="text"
+//         />
+//         <TextInput
+//           style={styles.input}
+//           placeholder="Email"
+//           value={email}
+//           onChangeText={setEmail}
+//           keyboardType="email-address"
+//         />
+//         <TextInput
+//           style={styles.input}
+//           placeholder="Password"
+//           value={password}
+//           onChangeText={setPassword}
+//           secureTextEntry
+//         />
+//         <TouchableOpacity style={styles.signupButton}>
+//           <Text style={styles.signupButtonText}>SIGN UP</Text>
+//         </TouchableOpacity>
+//         <View style={styles.loginContainer}>
+//           <Text style={styles.loginText}>Already have an account? </Text>
+//           <TouchableOpacity onPress={handleLoginPress}>
+//             <Text style={styles.loginLink}>Login</Text>
+//           </TouchableOpacity>
+//         </View>
+//       </View>
+//     </View>
+//   );
+// };
 import React, { useState } from "react";
 import {
   View,
@@ -13,9 +71,25 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigation = useNavigation();
+  const [error, setError] = useState("");
 
+  // const handleLoginPress = () => {
+  //   navigation.navigate("Login");
+  // };
   const handleLoginPress = () => {
-    navigation.navigate("Login");
+    navigation.navigate("Login", { email, password });
+  };
+
+  const handleSignup = () => {
+    if (name === "" || email === "" || password === "") {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    // Perform additional validation or data processing if needed
+
+    // Store the signup data in a variable or pass it to the login screen
+    navigation.navigate("Login", { name, email, password });
   };
 
   return (
@@ -43,7 +117,8 @@ const Signup = () => {
           onChangeText={setPassword}
           secureTextEntry
         />
-        <TouchableOpacity style={styles.signupButton}>
+        {error ? <Text style={styles.errorText}>{error}</Text> : null}
+        <TouchableOpacity style={styles.signupButton} onPress={handleSignup}>
           <Text style={styles.signupButtonText}>SIGN UP</Text>
         </TouchableOpacity>
         <View style={styles.loginContainer}>

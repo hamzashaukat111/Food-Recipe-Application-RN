@@ -8,14 +8,30 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const Login = () => {
+const Login = ({ route }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const navigation = useNavigation();
+  const [error, setError] = useState("");
 
   const handleSignupPress = () => {
     navigation.navigate("Signup");
+  };
+
+  const handleLogin = () => {
+    const { name, email: signupEmail, password: signupPassword } = route.params;
+
+    if (email === "" || password === "") {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    if (email === signupEmail && password === signupPassword) {
+      // Authentication successful, navigate to the home screen
+      navigation.navigate("Home");
+    } else {
+      setError("Invalid email or password.");
+    }
   };
 
   return (
@@ -36,7 +52,8 @@ const Login = () => {
           onChangeText={setPassword}
           secureTextEntry
         />
-        <TouchableOpacity style={styles.signupButton}>
+        {error ? <Text style={styles.errorText}>{error}</Text> : null}
+        <TouchableOpacity style={styles.signupButton} onPress={handleLogin}>
           <Text style={styles.signupButtonText}>Log In</Text>
         </TouchableOpacity>
         <View style={styles.loginContainer}>
@@ -101,6 +118,11 @@ const styles = StyleSheet.create({
     color: "#CC872C",
     fontWeight: "bold",
     marginLeft: 5,
+  },
+  errorText: {
+    color: "red",
+    marginTop: 10,
+    textAlign: "center",
   },
 });
 
