@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
 const Welcome = ({ navigation }) => {
   const handleGetStarted = () => {
-    navigation.navigate("Home");
+    navigation.navigate("Signup");
   };
   return (
     <View style={styles.container}>

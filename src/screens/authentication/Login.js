@@ -8,27 +8,20 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const Signup = () => {
-  const [name, setName] = useState("");
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const navigation = useNavigation();
 
-  const handleLoginPress = () => {
-    navigation.navigate("Login");
+  const handleSignupPress = () => {
+    navigation.navigate("Signup");
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>First create your account 👩‍🍳</Text>
+      <Text style={styles.title}>Login to your account 👩‍🍳</Text>
       <View style={styles.form}>
-        <TextInput
-          style={styles.input}
-          placeholder="Name"
-          value={name}
-          onChangeText={setName}
-          keyboardType="text"
-        />
         <TextInput
           style={styles.input}
           placeholder="Email"
@@ -44,12 +37,12 @@ const Signup = () => {
           secureTextEntry
         />
         <TouchableOpacity style={styles.signupButton}>
-          <Text style={styles.signupButtonText}>SIGN UP</Text>
+          <Text style={styles.signupButtonText}>Log In</Text>
         </TouchableOpacity>
         <View style={styles.loginContainer}>
-          <Text style={styles.loginText}>Already have an account? </Text>
-          <TouchableOpacity onPress={handleLoginPress}>
-            <Text style={styles.loginLink}>Login</Text>
+          <Text style={styles.loginText}>Don't have an account? </Text>
+          <TouchableOpacity onPress={handleSignupPress}>
+            <Text style={styles.loginLink}>Signup</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -62,11 +55,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white",
     padding: 28,
-  },
-  logo: {
-    width: "70%",
-    height: "20%",
-    alignSelf: "center",
   },
   title: {
     fontSize: 20,
@@ -116,4 +104,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Signup;
+export default Login;
