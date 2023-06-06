@@ -26,10 +26,12 @@ const Scan = () => {
   };
 
   const sendImageToAzure = async (uri) => {
+    // const apiUrl =
+    //   "https://cvwatermark-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/734afe81-8fa0-45d9-8bc5-81d075b50746/classify/iterations/Iteration1/image";
+    // const apiKey = "5e19fdcca31a48878e82eb0b7b226244";
     const apiUrl =
-      "https://cvwatermark-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/734afe81-8fa0-45d9-8bc5-81d075b50746/classify/iterations/Iteration1/image";
-    const apiKey = "5e19fdcca31a48878e82eb0b7b226244";
-
+      "https://cvscanfood-prediction.cognitiveservices.azure.com/customvision/v3.0/Prediction/49a8ea16-40d7-4234-b4a5-7e6c8bf4235f/classify/iterations/Iteration1/image";
+    const apiKey = "6d9918f13de44cdbb32081baaf81387c";
     const formData = new FormData();
     formData.append("image", {
       uri,
