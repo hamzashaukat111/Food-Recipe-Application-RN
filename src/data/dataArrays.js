@@ -46,6 +46,25 @@ export const recipes = [
     "--In a large bowl, cut the chicken into big chunks, wash and clean thoroughly. Combine yogurt, ground masala paste, salt, red chilli powder, turmeric powder, coriander powder, garam masala, and lemon juice. Mix well. Add the chicken pieces to the marinade along with 2 tsp of oil. Set aside for 2-3 hours. Heat sufficient oil in a pan, deep fry the onions until golden brown. Cool and set aside. In a blender, combine half of the fried onions, chopped tomatoes, green chillies, ginger, garlic, mint leaves, and coriander leaves. Blend to form a smooth paste. Soak saffron in milk and set aside. Wash rice, soak for 10 minutes. Boil rice in water with salt and whole garam masala. Drain when 3/4th done, remove garam masala. Heat a pan, melt 2 tbsp ghee. Place half of the marinated chicken in the pan. Cover with a layer of rice. Sprinkle fried onions, half of cardamom powder, chopped coriander, and saffron. Add remaining ghee. Repeat the layers. Cover with lid and cook for 20-22 minutes on low flame. Check and fluff rice with a fork. Check chicken tenderness, then turn off heat. Serve hot with raita or as is."
   },
   {
+    recipeId: 122,
+    categoryId: 3,
+    title: "Jalebi",
+    photo_url:
+      
+     "https://www.funfoodfrolic.com/wp-content/uploads/2020/11/Jalebi-Blog-Thumbnail-500x500.jpg",
+    photosArray: [
+      "https://www.funfoodfrolic.com/wp-content/uploads/2020/11/Jalebi-Blog-Thumbnail-500x500.jpg"
+    ],
+    time: "55",
+    ingredients: [
+      [0, "200ml"],
+      [1, "5g"],
+      [2, "300g"],
+    ],
+    description:
+    "--In a large bowl, cut the chicken into big chunks, wash and clean thoroughly. Combine yogurt, ground masala paste, salt, red chilli powder, turmeric powder, coriander powder, garam masala, and lemon juice. Mix well. Add the chicken pieces to the marinade along with 2 tsp of oil. Set aside for 2-3 hours. Heat sufficient oil in a pan, deep fry the onions until golden brown. Cool and set aside. In a blender, combine half of the fried onions, chopped tomatoes, green chillies, ginger, garlic, mint leaves, and coriander leaves. Blend to form a smooth paste. Soak saffron in milk and set aside. Wash rice, soak for 10 minutes. Boil rice in water with salt and whole garam masala. Drain when 3/4th done, remove garam masala. Heat a pan, melt 2 tbsp ghee. Place half of the marinated chicken in the pan. Cover with a layer of rice. Sprinkle fried onions, half of cardamom powder, chopped coriander, and saffron. Add remaining ghee. Repeat the layers. Cover with lid and cook for 20-22 minutes on low flame. Check and fluff rice with a fork. Check chicken tenderness, then turn off heat. Serve hot with raita or as is."
+  },
+  {
     recipeId: 3,
     categoryId: 4,
     title: "Zinger Burger",
