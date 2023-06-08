@@ -6,6 +6,10 @@ A feature-rich React Native app for discovering, saving, and sharing delightful 
 ``` npx expo start ```
 
 
+https://github.com/hamzashaukat111/Food-Recipe-Application-RN/assets/75229817/97b6b1d4-2e7a-4a64-956b-d28a67287451
+
+
+
 # Introduction
 
 Welcome to the Recipe Application! This React Native project allows you to conveniently explore and discover a wide range of recipes for various cuisines and occasions. With its user-friendly interface and intuitive features, cooking delicious meals has never been easier.
