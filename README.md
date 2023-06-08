@@ -1,5 +1,5 @@
 # Recipe Application
-A feature-rich React Native app for discovering, saving, and sharing delightful food recipes. Cross-platform compatible. Create Azure Machine learning Custom vision model for Scan feature.
+A feature-rich React Native app for discovering, saving, and sharing delightful food recipes. Cross-platform compatible. Created Azure Machine learning Custom vision model for Scan feature.
 
 
 ``` npm install ```
